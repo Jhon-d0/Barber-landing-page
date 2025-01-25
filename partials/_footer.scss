@@ -1,0 +1,61 @@
+footer{
+    padding: 4% 4%;
+    width: 100%;
+    background-color: var(--azul-claro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .socials{
+    display: flex;
+    gap: 20px;
+}
+
+footer .socials a{
+    color: var(--white);
+    font-size: 30px;
+}
+
+footer .socials a:hover{
+    animation: animaSocials 0.8s infinite alternate;
+    color: var(--red);
+}
+
+@keyframes animaSocials {
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    100%{
+        transform: translateY(-8px) scale(1.2);  
+    }
+}
+
+footer p, footer a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer .whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    transition: 2s;
+}
+
+footer .whatsapp:hover{
+    animation: anima-whatsapp .8s infinite alternate;
+}
+
+@keyframes anima-whatsapp {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-80px);
+    }
+}

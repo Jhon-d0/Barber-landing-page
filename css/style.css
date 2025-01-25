@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Poppins", serif;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+:root {
+  --azul: #06121E;
+  --azul-forte: #040f1a;
+  --azul-claro: #0c2135;
+  --black: #090d11;
+  --black-escuro: #06090c;
+  --black-claro: #1a1f25;
+  --white: #fefbff;
+  --red: #D94140;
+  --redforte: #b42b2b;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--azul-claro);
+  background-image: linear-gradient(to bottom, rgba(12, 33, 53, 0.7450980392), rgba(4, 15, 26, 0.7098039216), rgba(12, 33, 53, 0.7450980392)), url(../imgs/Fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -12;
+}
+
+.home header {
+  width: 100%;
+  height: 100px;
+  padding: 2% 4%;
+  display: flex;
+  align-items: center;
+}
+
+.home header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.home header nav .socials {
+  display: flex;
+  gap: 20px;
+}
+
+.home header nav .socials a {
+  color: var(--white);
+  font-size: 23px;
+}
+
+.home header nav .socials a:hover {
+  animation: animaSocials 0.8s infinite alternate;
+  color: var(--red);
+}
+
+@keyframes animaSocials {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-8px) scale(1.2);
+  }
+}
+.btn-agendar button {
+  border: 1px solid var(--white);
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: transparent;
+  transition: background-color 0.8;
+}
+
+.btn-agendar button:hover {
+  border: 1px solid;
+}
+
+.txt-home {
+  width: 100%;
+  height: calc(100vh - 100px);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-txt {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.central-txt h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.central-txt p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.central-txt button {
+  width: 292px;
+  height: 66px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--redforte);
+  border: none;
+}
+
+section.sobre {
+  width: 100%;
+  height: 506px;
+  background-color: var(--azul-claro);
+  box-shadow: 0 -100px 100px var(--azul-claro);
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre .img-sobre, .txt-sobre {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.img-sobre img {
+  height: 100%;
+}
+
+.txt-sobre {
+  gap: 30px;
+  color: var(--white);
+}
+
+.txt-sobre h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.servicos {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--white);
+  padding: 4% 4%;
+}
+
+.txt-servicos {
+  width: 100%;
+  height: 25%;
+  padding: 4% 20%;
+  gap: 30px;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-servicos h1 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.txt-servicos p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.haircurt {
+  width: 25%;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: 2px 2px 11px rgba(26, 31, 37, 0.5882352941);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.haicurt-info {
+  height: 65px;
+  padding: 4% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.haicurt-info button {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.localizacao {
+  width: 100%;
+  height: 70vh;
+  gap: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localizacao h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.mapa {
+  width: 100%;
+  height: 100%;
+}
+
+.mapa iframe {
+  width: 100%;
+}
+
+footer {
+  padding: 4% 4%;
+  width: 100%;
+  background-color: var(--azul-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .socials {
+  display: flex;
+  gap: 20px;
+}
+
+footer .socials a {
+  color: var(--white);
+  font-size: 30px;
+}
+
+footer .socials a:hover {
+  animation: animaSocials 0.8s infinite alternate;
+  color: var(--red);
+}
+
+@keyframes animaSocials {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-8px) scale(1.2);
+  }
+}
+footer p, footer a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  transition: 2s;
+}
+
+footer .whatsapp:hover {
+  animation: anima-whatsapp 0.8s infinite alternate;
+}
+
+@keyframes anima-whatsapp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-80px);
+  }
+}
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 30px;
+    padding: 0 4%;
+  }
+  .home p {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  .central-txt {
+    gap: 5px;
+  }
+  section.sobre {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column-reverse;
+    padding: 4%;
+    gap: 30px;
+  }
+  .sobre .img-sobre, .txt-sobre {
+    width: 100%;
+  }
+  .img-sobre img {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .servicos {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .txt-servicos {
+    padding: 4% 4%;
+  }
+  .txt-servicos p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .container {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .haircurt {
+    width: 100%;
+  }
+  .localizacao {
+    margin-top: 40px;
+  }
+  footer {
+    gap: 30px;
+    text-align: center;
+  }
+  footer .logo {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

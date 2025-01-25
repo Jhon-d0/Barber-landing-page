@@ -1,0 +1,99 @@
+// Estilização geral
+@import "../partials/Style-All";
+// cores
+@import "../partials/_colors.scss"; 
+
+// Home
+@import "../partials/home";
+
+// Sobre
+@import "../partials/sobre";
+
+// SERVIÇOS
+@import "../partials/sevicos";
+
+// LOCALIZAÇÃO
+@import "../partials/localizacao";
+
+// Footer
+@import "../partials/footer";
+
+// mobile
+
+@media (max-width: 768px) {
+    // header
+
+    .home h1{
+        font-size: 30px;
+        padding: 0 4%;
+    }
+
+    .home p{
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .central-txt{
+        gap: 5px;
+    }
+
+    // sobre
+
+    section.sobre{
+        height: fit-content;
+        flex-direction: column-reverse;
+        padding: 4%;
+        gap: 30px;
+    }
+
+    .sobre .img-sobre, .txt-sobre{
+        width: 100%;
+    }
+
+    .img-sobre img{
+        width: 100%;
+        height: fit-content;
+    }
+
+    // serviços
+
+    .servicos{
+        height: fit-content;
+    }
+    
+    .txt-servicos{
+        padding: 4% 4%;
+    }
+    
+    .txt-servicos p{
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .container{
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .haircurt{
+        width: 100%;
+    }
+
+    // LOCALIZAÇÃO
+
+    .localizacao{
+        margin-top: 40px;
+    }
+
+    // footer
+
+    footer{
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer .logo{
+        display: none;
+    }
+}

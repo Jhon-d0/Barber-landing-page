@@ -1,0 +1,26 @@
+// LOCALIZAÇÃO
+
+.localizacao{
+    width: 100%;
+    height: 70vh;
+    gap: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.localizacao h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.mapa{
+    width: 100%;
+    height: 100%;
+}
+
+.mapa iframe{
+    width: 100%;
+}
